@@ -2,19 +2,6 @@ format: jb-book
 root: README
 parts:
 
-- caption: Installation instructions
-  chapters:
-    - file: theme/Mongodb_installation
-- caption: Additional materials
-  chapters:
-    - file: theme/normalization.ipynb
-    - file: theme/lecture6extra
- # - file: theme/lecture3
- # - file: theme/lecture4
-#  - file: theme/lecture5
-  # - file: theme/lecture6
-  # - file: theme/lecture7
-  # - file: theme/lecture8
 - caption: Lectures
   chapters:
   - file: lectures/lecture1
