@@ -1,0 +1,21 @@
+name: dsci513
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.10
+  - pandas=2.2.3
+  - ipykernel=6.29.5
+  - sqlalchemy==1.4.46
+  - ipython-sql  
+  - psycopg2
+  - pandas==2.1.4
+  - matplotlib
+  - altair
+  - dnspython
+  - pip
+  - pip:
+    - pymongo[srv]
+    - ipython-sql==0.4.1
+
+  

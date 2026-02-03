@@ -1,0 +1,38 @@
+format: jb-book
+root: README
+parts:
+
+- caption: Installation instructions
+  chapters:
+    - file: theme/Mongodb_installation
+- caption: Additional materials
+  chapters:
+    - file: theme/normalization.ipynb
+    - file: theme/lecture6extra
+ # - file: theme/lecture3
+ # - file: theme/lecture4
+#  - file: theme/lecture5
+  # - file: theme/lecture6
+  # - file: theme/lecture7
+  # - file: theme/lecture8
+- caption: Lectures
+  chapters:
+  - file: lectures/lecture1
+  - file: lectures/lecture2
+  - file: lectures/lecture3
+  - file: lectures/lecture4
+  - file: lectures/lecture5
+  - file: lectures/lecture6
+  - file: lectures/lecture7
+  - file: lectures/lecture8
+
+- caption: Themes
+  chapters:
+  - file: theme/lecture1
+  - file: theme/lecture2
+  # - file: theme/lecture3
+  # - file: theme/lecture4
+  # - file: theme/lecture5
+  # - file: theme/lecture6
+  # - file: theme/lecture7
+  # - file: theme/lecture8
