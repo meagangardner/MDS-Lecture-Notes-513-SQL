@@ -4,7 +4,7 @@ author: Gittu George
 logo: lectures/img/dsci513_logo.png
 
 repository:
-  url: https://github.ubc.ca/mds-2024-25/DSCI_513_database-data-retr_students
+  url: https://github.com/MDS-Lecture-Notes-513-SQL
 
 latex:
   latex_documents:
