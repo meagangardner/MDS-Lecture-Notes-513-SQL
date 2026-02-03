@@ -3,10 +3,10 @@ name: Build and Deploy Jupyter Book
 on:
   push:
     branches:
-      - main  # or your default branch name
+      - main
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -16,7 +16,15 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.11'  # or your preferred Python version
+          python-version: '3.11'
+
+      - name: Cache pip
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
 
       - name: Install Jupyter Book and dependencies
         run: |
@@ -24,10 +32,9 @@ jobs:
           pip install jupyter-book
 
       - name: Build the Jupyter Book
-        run: |
-          jupyter-book build .
+        run: jupyter-book build .
 
-      - name: Deploy to GitHub Pages (docs folder)
+      - name: Deploy to GitHub Pages
         uses: actions/configure-pages@v3
 
       - name: Upload built site
@@ -35,9 +42,5 @@ jobs:
         with:
           path: _build/html
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
