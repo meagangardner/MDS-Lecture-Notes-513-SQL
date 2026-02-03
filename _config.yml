@@ -4,7 +4,7 @@ author: Gittu George
 logo: lectures/img/dsci513_logo.png
 
 repository:
-  url: https://github.com/MDS-Lecture-Notes-513-SQL
+  url: https://github.com/meagangardner/MDS-Lecture-Notes-513-SQL
 
 latex:
   latex_documents:
