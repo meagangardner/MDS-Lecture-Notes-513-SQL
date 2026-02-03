@@ -14,6 +14,9 @@ latex:
 execute:
   execute_notebooks: "off" # Whether to execute notebooks at build time. Must be one of ("auto", "force", "cache", "off")
 
+build:
+  only_build_toc_files: true
+
 # HTML-specific settings
 html:
   favicon: "lectures/img/favicon.png" # A path to a favicon image
@@ -34,5 +37,3 @@ parse:
   myst_enable_extensions:
     - html_image
     - dollarmath
-
-only_build_toc_files: true
